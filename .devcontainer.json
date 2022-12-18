@@ -1,0 +1,22 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:16",
+	// export PATH="/home/node/.deta/bin:$PATH"
+	// ignore this error.. idk why https://containers.dev/implementors/spec/#parallel-exec
+	"onCreateCommand": {
+		"deta": "curl -fsSL https://get.deta.dev/cli.sh | SHELL=bash bash -",
+		"pnpm": "curl -fsSL https://get.pnpm.io/install.sh | SHELL=bash bash -"
+	},
+	"postCreateCommand": "pnpm install",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"files.autoSave": "afterDelay"
+			},
+			"extensions": [
+				"yzhang.markdown-all-in-one",
+				"me-dutour-mathieu.vscode-github-actions",
+				"bierner.github-markdown-preview"
+			]
+		}
+	}
+}
