@@ -18,7 +18,7 @@ db.put({
 const body = (type) => JSON.stringify({
     username: "TwCatcher",
     avatar_url: "https://cdn.discordapp.com/avatars/985794103985987614/1bc312db9d8441a75e188d2a1d6cf9f3.png?size=4096",
-    content: `<@&${process.env.ROLE}> New PurpleTV otachannel!!`,
+    content: `<@&${process.env.ROLE}> **New PurpleTV otachannel!!**`,
     embeds: [{
         title: `PurpleTV b${type.build}`,
         description: type.changelog,
