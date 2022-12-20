@@ -47,6 +47,7 @@ app.lib.cron(async event => {
             body: body(json.dev).replace("otachannel", "Dev")
         })
     }
+    /*
     if (json.beta.build > item.beta) {
         item.beta = json.beta.build
         db.put(item, "version")
@@ -69,6 +70,7 @@ app.lib.cron(async event => {
             body: body(json.release).replace("otachannel", "Release")
         })
     }
+    */
 })
 
 module.exports = app
